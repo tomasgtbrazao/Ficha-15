@@ -13,8 +13,55 @@
     <button class="botao" id="anim4">HIPERMÉDIA</button>
     <button class="botao" id="anim5"><span id="anim5-span">HIPERMÉDIA</span></button>
     <button class="botao" id="anim6"><span id="text">HIPERMÉDIA</span></button>
+    <div class="loader">
+        <div class="barra1"></div>
+        <div class="barra2"></div>
+        <div class="barra3"></div>
+        <div class="barra4"></div>
+        <div class="barra5"></div>
+    </div>
     <style>
-        .botao{
+        .loader{
+            height: 100px;
+            width: 95%;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .barra1,
+        .barra2,
+        .barra3,
+        .barra4,
+        .barra5{
+            height: 50px;
+            width: 15px;
+            background-color: blueviolet;
+
+            animation: animação 1.5s infinite;
+        }
+        @keyframes animação{
+            0%{
+                transform: scaleY(1);
+            }
+            50%{
+                transform: scaleY(1);
+            }
+            100%{
+                transform: scaleY(1);
+            }
+        }
+        .barra2{
+            animation-delay: 0.2s;
+        }
+        .barra3{
+            animation-delay: 0.4s;
+        }
+        .barra4{
+            animation-delay: 0.6s;
+        }
+        .barra5{
+            animation-delay: 0.8s;
         }
         #anim6{
             position: relative;
